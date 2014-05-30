@@ -1,0 +1,17 @@
+<head>
+  <title>test_bug_tpl_nodes</title>
+</head>
+
+<body>
+  {{> hello}}
+  {{>hello2}}
+</body>
+
+<template name="hello">
+  {{#if show}}
+    <input type="button" value="Click" />
+  {{/if}}
+</template>
+<template name="hello2">
+    <input type="button" value="Click2" />
+</template>
